@@ -79,7 +79,7 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
 
 })
 
-describe('Suitcase: Calcular precio por encuadernación cartolé', ()=> {
+describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
 
     test('devuelve 30 € para 20 páginas', () => {
         const numPags = 20;
