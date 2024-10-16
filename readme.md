@@ -6,9 +6,10 @@ This project is a simulation of Test-Driven Development (TDD), where I test the 
 
 1. Clone the repository.
 2. Install dependencies using:
-   ```bash
-   npm install
-   ```
+
+```bash
+npm install
+```
 
 ## Usage
 
@@ -18,7 +19,7 @@ This project is a simulation of Test-Driven Development (TDD), where I test the 
 npm start
 ```
 
-2. Run tests with jest you can use one of these two commands:
+2. To run tests with jest you can use one of these two commands:
 
 ```bash
   npm run test
