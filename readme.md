@@ -30,7 +30,7 @@ Run tests with jest you can use one of these two commands:
 
 ## Testing Methodology and Strategy
 
-![Methodology and Strategy image](.public/methodology-and-strategy.png)
+![Methodology and Strategy image](./public/methodology-and-strategy.png)
 
 ## Test Requirements
 
