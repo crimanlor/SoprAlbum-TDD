@@ -53,6 +53,14 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
      })  
 
+    test('devuelve 48.4 € para dos unidades de 26 páginas', () => {
+         const numPags = 26;
+         const tipoEncuad = "R";
+         const cantidad = 2;
+         const totalPrice = 48.4;
+         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+     })  
+
     test('se aplica el 10% de descuento para una cantidad de 5 unidades', () => {
          const numPags = 20;
          const tipoEncuad = "R";
@@ -67,7 +75,15 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
          const cantidad = 10;
          const totalPrice = 150;
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
-     })  
+     }) 
+     
+    test('se aplica el 25% de descuento para una cantidad de 250 unidades', () => {
+        const numPags = 20;
+        const tipoEncuad = "R";
+        const cantidad = 250;
+        const totalPrice = 3750;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+    })  
 
     test('no se aceptan pedidos de más de 250 unidades', () => {
         const numPags = 20;
@@ -90,12 +106,36 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
     })
 
     test('devuelve 32 € para 22 páginas', () => {
-    const numPags = 22;
-    const tipoEncuad = "C";
-    const cantidad = 1;
-    const totalPrice = 32;
-    expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+        const numPags = 22;
+        const tipoEncuad = "C";
+        const cantidad = 1;
+        const totalPrice = 32;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
+
+    test('devuelve 34 € para 24 páginas', () => {
+        const numPags = 24;
+        const tipoEncuad = "C";
+        const cantidad = 1;
+        const totalPrice = 34;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+    })  
+
+    test('devuelve 72 € para dos unidades de 26 páginas', () => {
+        const numPags = 26;
+        const tipoEncuad = "C";
+        const cantidad = 2;
+        const totalPrice = 72;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+    })  
+
+    test('devuelve false para menos de 20 páginas', () => {
+        const numPags = 18;
+        const tipoEncuad = "C";
+        const cantidad = 1;
+        const totalPrice = false;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+    }) 
 
     test('se aplica el 10% de descuento para una cantidad de 5 unidades', () => {
         const numPags = 20;
@@ -110,6 +150,14 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         const tipoEncuad = "C";
         const cantidad = 10;
         const totalPrice = 225;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+    })  
+
+    test('se aplica el 25% de descuento para una cantidad de 250 unidades', () => {
+        const numPags = 20;
+        const tipoEncuad = "C";
+        const cantidad = 250;
+        const totalPrice = 5625;
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
