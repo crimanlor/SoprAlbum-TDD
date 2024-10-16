@@ -2,8 +2,8 @@ function calcularPrecio(numPags, tipoEncuad, cantidad) {
     let aditionalPages = numPags - 20;
     let totalPrice;
     
-    if (numPags % 2 !== 0){
-        return undefined; 
+    if (numPags % 2 !== 0 || numPags > 100){
+        return undefined;
     }
 
     const basePrice = tipoEncuad === "R" ? 20 : 30;
@@ -13,9 +13,7 @@ function calcularPrecio(numPags, tipoEncuad, cantidad) {
         totalPrice = basePrice * cantidad;
     } else if (numPags > 20){
         totalPrice = (basePrice + (aditionalPages * pricePerAditionalPage)) * cantidad;
-    } else {
-        return false
-    }
+    } 
         
     if (cantidad >= 5 && cantidad <= 9) totalPrice *= 0.9;
     if (cantidad >= 10 && cantidad <= 250) totalPrice *= 0.75;

@@ -7,9 +7,9 @@ const { calcularPrecio } = require('./albumsCost.js');
  * 3. Pasar el test
  */
 
-describe('Suitcase: Calcular precio cuando el número de páginas no es par', ()=> {
+describe('Suitcase: Calculate price when the number of pages is not even-par', ()=> {
 
-    it('devuelve undefined si el número de páginas es impar y la encuardenación rústica', () => {
+    it('Should return undefined when the number of pages is ood and binding is rústica', () => {
         const numPags = 23;
         const tipoEncuad = "R";
         const cantidad = 1
@@ -17,7 +17,7 @@ describe('Suitcase: Calcular precio cuando el número de páginas no es par', ()
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBeUndefined();
     })
 
-     it('devuelve undefined si el número de páginas es impar y la encuardenación cartoné', () => {
+     it('Should return undefined when the number of pages is ood and binding is cartoné', () => {
          const numPags = 37;
          const tipoEncuad = "C";
          const cantidad = 1
@@ -27,9 +27,9 @@ describe('Suitcase: Calcular precio cuando el número de páginas no es par', ()
 
 })
 
-describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
+describe('Suitcase: Calculate price for rústica binding', ()=> {
 
-    test('devuelve 20.00 € para 20 páginas', () => {
+    test('Should return 20.00 € when number of pages is 20', () => {
         const numPags = 20;
         const tipoEncuad = "R";
         const cantidad = 1;
@@ -37,7 +37,7 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
    })
 
-   test('devuelve 21.40 € para 22 páginas', () => {
+   test('Should return 21.40 € when number of pages is 22', () => {
         const numPags = 22;
         const tipoEncuad = "R";
         const cantidad = 1;
@@ -45,7 +45,7 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('devuelve 22.80 € para 24 páginas', () => {
+    test('Should return 22.80 € when number of pages is 24', () => {
          const numPags = 24;
          const tipoEncuad = "R";
          const cantidad = 1;
@@ -53,15 +53,22 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
      })  
 
-    test('devuelve 48.4 € para dos unidades de 26 páginas', () => {
+    test('Should return 48.40 € when order 2 units and number of pages is 26', () => {
          const numPags = 26;
          const tipoEncuad = "R";
          const cantidad = 2;
-         const totalPrice = 48.4;
+         const totalPrice = 48.40;
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
      })  
 
-    test('se aplica el 10% de descuento para una cantidad de 5 unidades', () => {
+    test('Should return undefined when number of pages is 120', () => {
+         const numPags = 120;
+         const tipoEncuad = "R";
+         const cantidad = 1;
+         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBeUndefined();
+     })  
+
+    test('A 10% discount is applied for an order of 5 units.', () => {
          const numPags = 20;
          const tipoEncuad = "R";
          const cantidad = 5;
@@ -69,7 +76,7 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
      })  
 
-    test('se aplica el 25% de descuento para una cantidad de 10 unidades', () => {
+    test('A 25% discount is applied for an order of 10 units.', () => {
          const numPags = 20;
          const tipoEncuad = "R";
          const cantidad = 10;
@@ -77,7 +84,7 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
      }) 
      
-    test('se aplica el 25% de descuento para una cantidad de 250 unidades', () => {
+    test('A 25% discount is applied for an order of 250 units.', () => {
         const numPags = 20;
         const tipoEncuad = "R";
         const cantidad = 250;
@@ -85,7 +92,7 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('no se aceptan pedidos de más de 250 unidades', () => {
+    test('Should return false for 260 units orders', () => {
         const numPags = 20;
         const tipoEncuad = "R";
         const cantidad = 260;
@@ -95,9 +102,9 @@ describe('Suitcase: Calcular precio por encuadernación rústica', ()=> {
 
 })
 
-describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
+describe('Suitcase: Calculate price for cartoné binding', ()=> {
 
-    test('devuelve 30 € para 20 páginas', () => {
+    test('Should return 30 € when number of pages is 20', () => {
         const numPags = 20;
         const tipoEncuad = "C";
         const cantidad = 1;
@@ -105,7 +112,7 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })
 
-    test('devuelve 32 € para 22 páginas', () => {
+    test('Should return 32 € when number of pages is 22', () => {
         const numPags = 22;
         const tipoEncuad = "C";
         const cantidad = 1;
@@ -113,7 +120,7 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('devuelve 34 € para 24 páginas', () => {
+    test('Should return 34 € when number of pages is 24', () => {
         const numPags = 24;
         const tipoEncuad = "C";
         const cantidad = 1;
@@ -121,7 +128,7 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('devuelve 72 € para dos unidades de 26 páginas', () => {
+    test('Should return 72 € when number of pages is 26', () => {
         const numPags = 26;
         const tipoEncuad = "C";
         const cantidad = 2;
@@ -129,15 +136,22 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('devuelve false para menos de 20 páginas', () => {
+    test('Should return false when number of pages is less of 20', () => {
         const numPags = 18;
         const tipoEncuad = "C";
         const cantidad = 1;
-        const totalPrice = false;
+        const totalPrice = undefined;
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     }) 
 
-    test('se aplica el 10% de descuento para una cantidad de 5 unidades', () => {
+    test('Should return undefined when number of pages is 130', () => {
+        const numPags = 130;
+        const tipoEncuad = "C";
+        const cantidad = 1;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBeUndefined();
+    })  
+
+    test('A 10% discount is applied for an order of 5 units.', () => {
         const numPags = 20;
         const tipoEncuad = "C";
         const cantidad = 5;
@@ -145,7 +159,7 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('se aplica el 25% de descuento para una cantidad de 10 unidades', () => {
+    test('A 25% discount is applied for an order of 10 units.', () => {
         const numPags = 20;
         const tipoEncuad = "C";
         const cantidad = 10;
@@ -153,7 +167,7 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('se aplica el 25% de descuento para una cantidad de 250 unidades', () => {
+    test('A 25% discount is applied for an order of 250 units.', () => {
         const numPags = 20;
         const tipoEncuad = "C";
         const cantidad = 250;
@@ -161,7 +175,7 @@ describe('Suitcase: Calcular precio por encuadernación cartoné', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('no se aceptan pedidos de más de 250 unidades', () => {
+    test('Should return false for 260 units orders', () => {
         const numPags = 20;
         const tipoEncuad = "C";
         const cantidad = 260;

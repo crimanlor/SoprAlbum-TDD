@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729071296115" clover="3.2.0">
-  <project timestamp="1729071296115" name="All files">
-    <metrics statements="15" coveredstatements="15" conditionals="20" coveredconditionals="20" methods="1" coveredmethods="1" elements="36" coveredelements="36" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+<coverage generated="1729083343734" clover="3.2.0">
+  <project timestamp="1729083343734" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="22" coveredconditionals="22" methods="1" coveredmethods="1" elements="37" coveredelements="37" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
     <file name="albumsCost.js" path="/Users/lorenacriadomanzaneque/Desktop/Cursos/Curso Desarrollo Web/Módulo 2/Ejercicios/prueba-técnica-tdd/albumsCost.js">
-      <metrics statements="15" coveredstatements="15" conditionals="20" coveredconditionals="20" methods="1" coveredmethods="1"/>
-      <line num="2" count="19" type="stmt"/>
-      <line num="5" count="19" type="cond" truecount="2" falsecount="0"/>
-      <line num="6" count="2" type="stmt"/>
+      <metrics statements="14" coveredstatements="14" conditionals="22" coveredconditionals="22" methods="1" coveredmethods="1"/>
+      <line num="2" count="21" type="stmt"/>
+      <line num="5" count="21" type="cond" truecount="4" falsecount="0"/>
+      <line num="6" count="4" type="stmt"/>
       <line num="9" count="17" type="cond" truecount="2" falsecount="0"/>
       <line num="10" count="17" type="cond" truecount="2" falsecount="0"/>
       <line num="12" count="17" type="cond" truecount="2" falsecount="0"/>
       <line num="13" count="10" type="stmt"/>
       <line num="14" count="7" type="cond" truecount="2" falsecount="0"/>
       <line num="15" count="6" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="20" count="16" type="cond" truecount="4" falsecount="0"/>
-      <line num="21" count="16" type="cond" truecount="4" falsecount="0"/>
-      <line num="22" count="16" type="cond" truecount="2" falsecount="0"/>
-      <line num="24" count="14" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
+      <line num="18" count="17" type="cond" truecount="4" falsecount="0"/>
+      <line num="19" count="17" type="cond" truecount="4" falsecount="0"/>
+      <line num="20" count="17" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="15" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
