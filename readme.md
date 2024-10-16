@@ -38,11 +38,11 @@ npm run test:coverage
 ### Pricing Model
 
 - Initial price (20 pages):
-  - Rústica binding: **€20.00**
-  - Cartoné binding: **€30.00**
+  - Rustic binding: **€20.00**
+  - Case binding: **€30.00**
 - Additional price per 2 extra pages:
-  - Rústica: **€0.70**
-  - Cartoné: **€1.00**
+  - Rustic: **€0.70**
+  - Case: **€1.00**
 
 #### Discounts for bulk orders:
 
@@ -54,7 +54,7 @@ npm run test:coverage
 ### Parameters
 
 - `numPags`: An integer representing the album's page count.
-- `tipoEncuad`: A string representing the binding type, either "R" for rústica or "C" for cartoné.
+- `tipoEncuad`: A string representing the binding type, either "R" for rustic or "C" for case.
 - `cantidad`: The number of copies ordered.
 
 Additionally, **all inputs and outputs** are received as strings, meaning incorrect formats and null values could be encountered.
@@ -65,10 +65,10 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 
 **Suitcase: Calculate price when the number of pages is not even**
 
-- **Case 1**: Should return undefined when the number of pages is odd and binding is rústica.
-- **Case 2**: Should return undefined when the number of pages is odd and binding is cartoné.
+- **Case 1**: Should return undefined when the number of pages is odd and binding is rustic.
+- **Case 2**: Should return undefined when the number of pages is odd and binding is case.
 
-**Suitcase: Calculate price for rústica binding**
+**Suitcase: Calculate price for rustic binding**
 
 - **Case 3**: Should return 20.00 € when number of pages is 20.
 - **Case 4**: Should return 21.40 € when number of pages is 22.
@@ -80,7 +80,7 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 - **Case 10**: A 25% discount is applied for an order of 250 units.
 - **Case 11**: Should return false for 260 units orders.
 
-**Suitcase: Calculate price for cartoné binding**
+**Suitcase: Calculate price for case binding**
 
 - **Case 12**: Should return 30 € when number of pages is 20.
 - **Case 13**: Should return 32 € when number of pages is 22.

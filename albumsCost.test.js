@@ -9,7 +9,7 @@ const { calcularPrecio } = require('./albumsCost.js');
 
 describe('Suitcase: Calculate price when the number of pages is not even-par', ()=> {
 
-    it('Should return undefined when the number of pages is ood and binding is rústica', () => {
+    it('Should return undefined when the number of pages is ood and binding is rustic', () => {
         const numPags = 23;
         const tipoEncuad = "R";
         const cantidad = 1
@@ -17,7 +17,7 @@ describe('Suitcase: Calculate price when the number of pages is not even-par', (
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBeUndefined();
     })
 
-     it('Should return undefined when the number of pages is ood and binding is cartoné', () => {
+     it('Should return undefined when the number of pages is ood and binding is case', () => {
          const numPags = 37;
          const tipoEncuad = "C";
          const cantidad = 1
@@ -27,7 +27,7 @@ describe('Suitcase: Calculate price when the number of pages is not even-par', (
 
 })
 
-describe('Suitcase: Calculate price for rústica binding', ()=> {
+describe('Suitcase: Calculate price for rustic binding', ()=> {
 
     test('Should return 20.00 € when number of pages is 20', () => {
         const numPags = 20;
@@ -102,7 +102,7 @@ describe('Suitcase: Calculate price for rústica binding', ()=> {
 
 })
 
-describe('Suitcase: Calculate price for cartoné binding', ()=> {
+describe('Suitcase: Calculate price for case binding', ()=> {
 
     test('Should return 30 € when number of pages is 20', () => {
         const numPags = 20;
