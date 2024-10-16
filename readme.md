@@ -22,11 +22,11 @@ npm start
 2. To run tests with jest you can use one of these two commands:
 
 ```bash
-  npm run test
+npm run test
 ```
 
 ```bash
-   npm run test:coverage
+npm run test:coverage
 ```
 
 ## Testing Methodology and Strategy
