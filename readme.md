@@ -97,6 +97,6 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 
 If you would like to view the report of inputs and outputs, you can access it [here](https://drive.google.com/file/d/1KB6wzzEmwochsJbaN8a48vk2PCE1lZJf/view?usp=sharing).
 
-If you want to learn more about the development process, feel free to check out the [Figma Jam](https://www.figma.com/board/K2UCMwwdY7JsmcJDFU5tF6/SoprAlbum-Testing?node-id=0-1&t=fsxOiwF7r4mFlnCW-1) where I documented various stages of the project.
+If you want to learn more about the development process, feel free to check out the [FigJam](https://www.figma.com/board/K2UCMwwdY7JsmcJDFU5tF6/SoprAlbum-Testing?node-id=0-1&t=fsxOiwF7r4mFlnCW-1) where I documented various stages of the project.
 
 ---
