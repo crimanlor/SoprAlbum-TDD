@@ -92,11 +92,11 @@ describe('Suitcase: Calculate price for rustic binding', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('Should return false for 260 units orders', () => {
+    test('Should return undefined for 260 units orders', () => {
         const numPags = 20;
         const tipoEncuad = "R";
         const cantidad = 260;
-        const totalPrice = false;
+        const totalPrice = undefined;
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
@@ -136,7 +136,7 @@ describe('Suitcase: Calculate price for case binding', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('Should return false when number of pages is less of 20', () => {
+    test('Should return undefined when number of pages is less of 20', () => {
         const numPags = 18;
         const tipoEncuad = "C";
         const cantidad = 1;
@@ -175,11 +175,11 @@ describe('Suitcase: Calculate price for case binding', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('Should return false for 260 units orders', () => {
+    test('Should return undefined for 260 units orders', () => {
         const numPags = 20;
         const tipoEncuad = "C";
         const cantidad = 260;
-        const totalPrice = false;
+        const totalPrice = undefined;
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 

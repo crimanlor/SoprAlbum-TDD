@@ -78,7 +78,7 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 - **Case 8**: A 10% discount is applied for an order of 5 units.
 - **Case 9**: A 25% discount is applied for an order of 10 units.
 - **Case 10**: A 25% discount is applied for an order of 250 units.
-- **Case 11**: Should return false for 260 units orders.
+- **Case 11**: Should return undefined for 260 units orders.
 
 **Suitcase: Calculate price for case binding**
 
@@ -91,7 +91,7 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 - **Case 18**: A 10% discount is applied for an order of 5 units.
 - **Case 19**: A 25% discount is applied for an order of 10 units.
 - **Case 20**: A 25% discount is applied for an order of 250 units.
-- **Case 21**: Should return false for 260 units orders.
+- **Case 21**: Should return undefined for 260 units orders.
 
 ## Reporting and Additional Resources
 
