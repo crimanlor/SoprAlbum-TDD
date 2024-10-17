@@ -95,6 +95,6 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 
 ## Reporting and Additional Resources
 
-If you'd like to learn more about the SoprAlbum calculate price TDD process, feel free to visit this [link](https://drive.google.com/file/d/1zBO6FOfijNUEW_8aeeZpdlA9EfF3cvmp/view?usp=sharing) or check out the [FigJam](https://www.figma.com/board/K2UCMwwdY7JsmcJDFU5tF6/SoprAlbum-Testing?node-id=0-1&t=fsxOiwF7r4mFlnCW-1), where I've documented various stages of the project.
+If you'd like to learn more about the SoprAlbum calculate price TDD process, feel free to visit this [link](https://drive.google.com/file/d/1j_x2nOh7WewfS7vEjcSTYTgtBj5RfL51/view?usp=sharing) or check out the [FigJam](https://www.figma.com/board/K2UCMwwdY7JsmcJDFU5tF6/SoprAlbum-Testing?node-id=0-1&t=fsxOiwF7r4mFlnCW-1), where I've documented various stages of the project.
 
 ---
