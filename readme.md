@@ -71,9 +71,9 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 **Suitcase: Calculate price for rustic binding**
 
 - **Case 3**: Should return 20.00 € when number of pages is 20.
-- **Case 4**: Should return 21.40 € when number of pages is 22.
-- **Case 5**: Should return 22.80 € when number of pages is 24.
-- **Case 6**: Should return 48.40 € when order 2 units and number of pages is 26.
+- **Case 4**: Should return 20.07 € when number of pages is 22.
+- **Case 5**: Should return 21.40 € when number of pages is 24.
+- **Case 6**: Should return 44.20 € when order 2 units and number of pages is 26.
 - **Case 7**: Should return undefined when number of pages is 120.
 - **Case 8**: A 10% discount is applied for an order of 5 units.
 - **Case 9**: A 25% discount is applied for an order of 10 units.
@@ -83,9 +83,9 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 **Suitcase: Calculate price for case binding**
 
 - **Case 12**: Should return 30 € when number of pages is 20.
-- **Case 13**: Should return 32 € when number of pages is 22.
-- **Case 14**: Should return 34 € when number of pages is 24.
-- **Case 15**: Should return 72 € when number of pages is 26.
+- **Case 13**: Should return 31 € when number of pages is 22.
+- **Case 14**: Should return 32 € when number of pages is 24.
+- **Case 15**: Should return 66 € when number of pages is 26.
 - **Case 16**: Should return undefined when number of pages is less than 20.
 - **Case 17**: Should return undefined when number of pages is 130.
 - **Case 18**: A 10% discount is applied for an order of 5 units.
@@ -95,6 +95,6 @@ Here is a detailed breakdown of the test cases written to ensure the functionali
 
 ## Reporting and Additional Resources
 
-If you'd like to learn more about the SoprAlbum calculate price TDD process, feel free to visit this [link](https://drive.google.com/file/d/1j_x2nOh7WewfS7vEjcSTYTgtBj5RfL51/view?usp=sharing) or check out the [FigJam](https://www.figma.com/board/K2UCMwwdY7JsmcJDFU5tF6/SoprAlbum-Testing?node-id=0-1&t=fsxOiwF7r4mFlnCW-1), where I've documented various stages of the project.
+If you'd like to learn more about the SoprAlbum calculate price TDD process, feel free to visit this [link](https://drive.google.com/file/d/1RKOjvEzNXn8uF7vGO2nZ-0WVcTG7az4V/view?usp=sharing) or check out the [FigJam](https://www.figma.com/board/K2UCMwwdY7JsmcJDFU5tF6/SoprAlbum-Testing?node-id=0-1&t=fsxOiwF7r4mFlnCW-1), where I've documented various stages of the project.
 
 ---

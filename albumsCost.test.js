@@ -37,27 +37,27 @@ describe('Suitcase: Calculate price for rustic binding', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
    })
 
-   test('Should return 21.40 € when number of pages is 22', () => {
+   test('Should return 20.07 € when number of pages is 22', () => {
         const numPags = 22;
         const tipoEncuad = "R";
         const cantidad = 1;
-        const totalPrice = 21.40;
+        const totalPrice = 20.7;
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('Should return 22.80 € when number of pages is 24', () => {
+    test('Should return 21.4 € when number of pages is 24', () => {
          const numPags = 24;
          const tipoEncuad = "R";
          const cantidad = 1;
-         const totalPrice = 22.80;
+         const totalPrice = 21.4;
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
      })  
 
-    test('Should return 48.40 € when order 2 units and number of pages is 26', () => {
+    test('Should return 44.2 € when order 2 units and number of pages is 26', () => {
          const numPags = 26;
          const tipoEncuad = "R";
          const cantidad = 2;
-         const totalPrice = 48.40;
+         const totalPrice = 44.2;
          expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
      })  
 
@@ -112,27 +112,27 @@ describe('Suitcase: Calculate price for case binding', ()=> {
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })
 
-    test('Should return 32 € when number of pages is 22', () => {
+    test('Should return 31 € when number of pages is 22', () => {
         const numPags = 22;
+        const tipoEncuad = "C";
+        const cantidad = 1;
+        const totalPrice = 31;
+        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
+    })  
+
+    test('Should return 32 € when number of pages is 24', () => {
+        const numPags = 24;
         const tipoEncuad = "C";
         const cantidad = 1;
         const totalPrice = 32;
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
-    test('Should return 34 € when number of pages is 24', () => {
-        const numPags = 24;
-        const tipoEncuad = "C";
-        const cantidad = 1;
-        const totalPrice = 34;
-        expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
-    })  
-
-    test('Should return 72 € when number of pages is 26', () => {
+    test('Should return 66 € when number of pages is 26', () => {
         const numPags = 26;
         const tipoEncuad = "C";
         const cantidad = 2;
-        const totalPrice = 72;
+        const totalPrice = 66;
         expect(calcularPrecio(numPags, tipoEncuad, cantidad)).toBe(totalPrice);
     })  
 
