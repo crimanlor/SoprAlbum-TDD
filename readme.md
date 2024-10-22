@@ -13,13 +13,7 @@ npm install
 
 ## Usage
 
-1. To start the server, run:
-
-```bash
-npm start
-```
-
-2. To run tests with jest you can use one of these two commands:
+To run tests with jest you can use one of these two commands:
 
 ```bash
 npm run test
